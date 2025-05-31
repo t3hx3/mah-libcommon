@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Path
+Target = usr/lib/mah/libmahcommon.so
+
+[Action]
+Description = Updating dynamic linker cache for MAH...
+When = PostTransaction
+Exec = /usr/bin/ldconfig
